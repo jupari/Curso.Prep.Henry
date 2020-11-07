@@ -1,0 +1,399 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background: url(../img/fondo-sombra.jpg);
+}
+
+.grid{
+    display: grid;
+    background-color: white;
+    margin: 0px auto;
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+
+}
+
+.font-300{
+    font-weight:300;
+}
+
+.font-400{
+    font-weight:400;
+}
+
+.font-500{
+    font-weight: 500;
+}
+
+.font-600{
+    font-weight: 600;
+}
+
+.font-900{
+    font-weight: 900;
+}
+/*Seccion Cabecera*/
+
+#imagen-cabecera{
+    height: 400px;
+    grid-column: 1/-1;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: linear-gradient(120deg, hsla(142, 92%, 75%, 0.2) 0%, hsla(200, 82%, 76%, 0.2) 100%), url(../img/imagen-fondo-cabecera.jpg);
+}
+
+.wave{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+
+}
+
+.textos-cab{
+    position: absolute;
+    top:90px ;
+    grid-column: 2/8;
+    color:white;
+    font-size: 1.5em;
+}
+
+.textos-cab h1{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+
+.textos-cab p{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+
+.textos-cab h1:hover{
+    color: #3333CC;
+
+}
+.textos-cab p:hover{
+    color: #3333CC;
+}
+
+.foto-personal{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top:90px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+    grid-column: 9/11;
+
+}
+.foto-personal img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    position: absolute;
+    grid-column: 2/12;
+    top:20px
+}
+
+.menu ul{
+    list-style: none;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 5px;
+    padding: 10px;
+    transition:  all 300ms;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color:white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+
+.menu ul li:hover{
+    background: hsla(0, 0%, 0%, 0.57);
+}
+
+.menu ul li a:hover{
+    color:white;
+}
+/*Seccion Descripcion Personal*/
+
+#descripcionpersonal{
+    height: 500px;
+}
+
+.imagen-descripcion{
+    position: absolute;
+    grid-column: 7/11;
+    top: 20px
+}
+
+.imagen-descripcion img{
+    width: 300px;
+    height: 300px;
+}
+
+.textos-descripcion{
+    position: absolute;
+    grid-column: 2/7;
+    text-align: justify;
+    top: 60px;
+}
+
+.textos-descripcion h2{
+    margin-bottom: 10px;
+}
+
+.textos-descripcion p{
+    line-height: 2em;
+}
+
+/*Seccion Educacion*/
+
+#educacion{
+    height: 500px;
+}
+
+.imagen-educacion{
+    position: absolute;
+    grid-column: 2/5;
+    top: 40px;
+}
+
+.imagen-educacion img{
+    width: 300px;
+    height: 300px;
+}
+
+.titulo-educacion{
+    position: absolute;    
+    grid-column: 4/9;
+    text-align: center;
+    top: 0px;
+}
+.lista-educacion{
+    position: absolute;
+    grid-column: 8/12;
+    top:80
+}
+
+.lista-educacion li{
+    margin-bottom: 10px;
+} 
+
+/*Seccion Experiencia Laboral*/
+
+#exla{
+    height: 600px;
+}
+
+.titulo-exla{
+    position: absolute;
+    grid-column: 5/8;
+    justify-content: center;
+    top:0px
+}
+
+.imagen-exla{
+    position: absolute;
+    grid-column: 5/8;
+    top:20px
+}
+
+.imagen-exla img{
+    width: 350px;
+    height: 350px;
+}
+
+.contenido-exla{
+    position: absolute;
+    grid-column:2/11;
+    top:350px;
+}
+
+.contenido-exla p{
+    line-height: 2em;
+}
+
+/*Seccion SKILLS*/
+#skill{
+    height: 370px;
+    background: linear-gradient(180deg, white 50%, black 50%);
+}
+
+#skill h2{
+    grid-column: 4/10;
+    justify-content: center;
+} 
+
+.skills{
+    grid-column:1/-1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.skil{
+    width: 30%;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    height: 220px;
+    padding: 10px 5px;
+    text-align: center;
+}
+.skil h3{
+    margin: 20px;
+}
+
+.skil p{
+    line-height: 1.3em;
+}
+
+/*Seccion Hobbies*/
+
+#hobbies{
+    height: 370;
+}
+
+#hobbies h2{
+    position: absolute;
+    grid-column: 4/10;
+    top:50px
+}
+
+.cont-hobbies{
+    position: absolute;
+    grid-column: 1/-1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top:40px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hobbi {
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 1000ms;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbi1{
+    background-image: url(../img/hobbie1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .hobbi2{
+    background-image: url(../img/hobbie2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .hobbi3{
+    background-image: url(../img/hobbie3.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .nombre-hobbie{
+    color: white;
+ }
+
+ 
+.hobbi:hover{
+    background:hsla(0, 0%, 0%, 0.596);
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+/*Seccion footer*/
+#pie{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 200px;
+}
+.piepag{
+   grid-column: 1/-1;
+}
+
+.texto-pie{
+    position: absolute;
+    grid-column: 2/6;
+    color:  #887f7f;
+    top:30px;
+}
+
+.texto-pie > p{
+    margin-bottom: 10px;
+}
+
+/*Seccion lo que se espera*/
+#loqueseespera{
+    height: 300px;
+}
+
+.expectativa{
+    position: absolute;
+    grid-column: 1/-1;
+    top: 40px;
+
+}
+
+.imagen-expectativa{
+    position: absolute;
+    grid-column: 1/-1;
+    justify-content: space-evenly;
+    align-items: center;
+    top:20px;
+}
+
+.imagen-expectativa img{
+    width: 150px;
+    height: 150px;
+    filter: opacity(.5);
+
+}
+
+.expectativa h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.expectativa p{
+    width: 80%;
+    margin: 0px auto;
+    line-height: 1.5em;
+
+}
